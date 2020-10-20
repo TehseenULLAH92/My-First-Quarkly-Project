@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Link, Strong, Text, Box, Image, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section } from "@quarkly/components";
 export default (() => {
@@ -12,7 +12,8 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section quarkly-title="Top Banner" background="url(https://images.unsplash.com/photo-1600239267151-50bbd103b5f0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center/cover no-repeat fixed,#000000" height="600px">
+		<Section quarkly-title="Top Banner" background="url(https://images.unsplash.com/photo-1600239267151-50bbd103b5f0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center/cover no-repeat fixed,#000000" height="600px" display="flex">
+			<Override slot="SectionContent" align-self="auto" display="flex" transition="all --transitionDuration-normal --transitionTimingFunction-easeInOut 5s" />
 			<Box
 				display="flex"
 				padding="12px 0"
@@ -95,6 +96,90 @@ export default (() => {
 						quarkly-title="Cart"
 						margin="0px 10px 0px"
 					/>
+				</Box>
+			</Box>
+			<Box
+				display="block"
+				quarkly-title="Banner Text Section"
+				margin="200px 0px 0px 0px"
+				align-items="center"
+				padding="0 0 0 0"
+				flex-direction="row"
+				justify-content="start"
+				hover-border-radius="3px"
+			>
+				<Text
+					quarkly-title="Heading One"
+					color="#ffffff"
+					font="normal 18px/1.5 --fontFamily-sans"
+					display="inline"
+					margin="0 0px 0 0px"
+				>
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						display="inline"
+					>
+						We are giving you the best!
+					</Strong>
+					{"\n\n"}
+				</Text>
+				<Text
+					quarkly-title="IT Products"
+					display="block"
+					as="h1"
+					color="#ffffff"
+					font="700 72px sans-serif"
+					letter-spacing={0}
+					margin="0 0px 0 0px"
+				>
+					<Strong text-indent="0" margin="0px 0px 0px 0px" font="700 72px/0 sans-serif">
+						IT Products{"\n\n"}
+					</Strong>
+				</Text>
+				<Text color="#ffffff" font="18px --fontFamily-sans" margin="0 0px 0 0px" as="h5">
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+					>
+						in the Shortest Time.
+					</Strong>
+					{"\n\n"}
+				</Text>
+				<Box quarkly-title="Button Section" margin="15px 0px 0px 0px" padding="0px 0px 0px 0px">
+					<Button
+						font="normal 500 16px/1.5 --fontFamily-sans"
+						margin="10px 0px 0px 0px"
+						hover-background="#004f89"
+						border-width="1px"
+						border-style="none"
+						border-color="#e1dfdf"
+						border-radius="3px"
+						hover-border-radius="3px"
+					>
+						Learn More
+					</Button>
+					<Button
+						font="normal 500 16px/1.5 --fontFamily-sans"
+						margin="10px 0px 0px 15px"
+						hover-background="#004f89"
+						padding="8px 20px 8px 20px"
+						border-width="1px"
+						border-radius="3px"
+						background="rgba(0, 119, 204, 0)"
+						border-color="#a2a2a2"
+						border-style="solid"
+					>
+						Go to Next
+					</Button>
 				</Box>
 			</Box>
 		</Section>

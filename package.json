@@ -2,6 +2,7 @@
     "name": "quarkly-export",
     "scripts": {
         "build": "gatsby build",
+        "build:clean": "CI=false npm run clean && npm run build",
         "develop": "gatsby develop",
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
         "start": "npm run develop",
