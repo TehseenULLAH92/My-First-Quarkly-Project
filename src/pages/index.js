@@ -183,5 +183,53 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
+		<Section quarkly-title="Services">
+			<Box quarkly-title="Main Wrapper" display="grid">
+				<Box
+					quarkly-title="Item"
+					display="block"
+					grid-column="1"
+					padding="20px"
+					text-align="justify"
+				>
+					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif">
+						<Strong font="normal 700 18px --fontFamily-sans">
+							Product{" "}
+							<br />
+							Engineering
+							<br />
+						</Strong>
+						<br />
+						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+					</Text>
+				</Box>
+				<Box quarkly-title="Item" grid-column="2" text-align="justify" padding="20px">
+					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif">
+						<Strong font="normal 700 18px --fontFamily-sans">
+							UI/UX
+							<br />
+							Strategy
+							<br />
+						</Strong>
+						<br />
+						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+					</Text>
+				</Box>
+				<Box quarkly-title="Item" grid-column="3" text-align="justify" padding="20px">
+					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif">
+						<Strong font="normal 700 18px --fontFamily-sans" text-align="justify">
+							Big Data
+							<br />
+							& Analytics
+							<br />
+							{" "}
+							<br />
+						</Strong>
+						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+					</Text>
+				</Box>
+			</Box>
+		</Section>
+		<Box quarkly-title="Overlay Block" />
 	</Theme>;
 });
