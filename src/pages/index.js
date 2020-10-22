@@ -1,8 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Text, Box, Image, Button } from "@quarkly/widgets";
+import { Theme, Link, Strong, Text, Box, Image, Button, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section } from "@quarkly/components";
+import { BsPlus } from "react-icons/bs";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -183,16 +184,23 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section quarkly-title="Services">
-			<Box quarkly-title="Main Wrapper" display="grid">
+		<Section quarkly-title="Services" background="#1C1C1C" color="#ffffff">
+			<Box
+				quarkly-title="Main Wrapper"
+				display="grid"
+				position="relative"
+				top={0}
+				height="430px"
+			>
 				<Box
 					quarkly-title="Item"
 					display="block"
 					grid-column="1"
-					padding="40px"
+					padding="60px"
 					text-align="justify"
+					margin="0 0px"
 				>
-					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px">
+					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px" margin="0 0px">
 						<Strong font="normal 700 18px --fontFamily-sans">
 							Product{" "}
 							<br />
@@ -204,8 +212,16 @@ export default (() => {
 					</Text>
 				</Box>
 				<Box quarkly-title="Item" grid-column="2" text-align="justify" padding="40px">
-					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px">
-						<Strong font="normal 700 18px --fontFamily-sans">
+					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px" margin="0 0px">
+						<Strong
+							font="normal 700 18px --fontFamily-sans"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
 							UI/UX
 							<br />
 							Strategy
@@ -216,7 +232,7 @@ export default (() => {
 					</Text>
 				</Box>
 				<Box quarkly-title="Item" grid-column="3" text-align="justify" padding="40px">
-					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px">
+					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px" margin="0 0px">
 						<Strong font="normal 700 18px --fontFamily-sans" text-align="justify">
 							Big Data
 							<br />
@@ -230,6 +246,193 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Box quarkly-title="Overlay Block" />
+		<Box
+			quarkly-title="Overlay Block"
+			background="#075af7 linear-gradient(-50deg,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%) 0% 0%/cover no-repeat"
+			position="relative"
+			width="880px"
+			height="200px"
+			margin="-115px auto 0px"
+			display="flex"
+		>
+			<Box
+				quarkly-title="Overlay Item One"
+				width="25%"
+				height="150px"
+				display="grid"
+				align-self="center"
+			>
+				<Icon
+					category="bs"
+					icon={BsPlus}
+					color="#a6f306"
+					font="700 36px --fontFamily-sansHeavy"
+					align-self="end"
+					justify-self="end"
+					margin="0px 40px 0px 0px"
+				/>
+				<Text
+					quarkly-title="Item Heading"
+					display="block"
+					font="700 40px --fontFamily-sans"
+					color="#ffffff"
+					align-self="center"
+					justify-self="center"
+					margin="0 0px 0 0px"
+				>
+					350{"\n\n"}
+				</Text>
+				<Text
+					quarkly-title="Item Heading"
+					color="#ffffff"
+					font="16px --fontFamily-sans"
+					display="block"
+					justify-self="center"
+					align-self="center"
+					margin="0 0px 10px 0px"
+				>
+					<Strong>
+						{"\n"}Demonstration{"\n\n"}
+					</Strong>
+				</Text>
+			</Box>
+			<Box
+				quarkly-title="Overlay Item One"
+				width="25%"
+				height="150px"
+				display="grid"
+				align-self="center"
+			>
+				<Icon
+					category="bs"
+					icon={BsPlus}
+					color="#a6f306"
+					font="700 36px --fontFamily-sansHeavy"
+					align-self="end"
+					justify-self="end"
+					margin="0px 40px 0px 0px"
+				/>
+				<Text
+					quarkly-title="Item Heading"
+					display="block"
+					font="700 40px --fontFamily-sans"
+					color="#ffffff"
+					align-self="center"
+					justify-self="center"
+					margin="0 0px 0 0px"
+				>
+					285
+				</Text>
+				<Text
+					quarkly-title="Item Heading"
+					color="#ffffff"
+					font="16px --fontFamily-sans"
+					display="block"
+					justify-self="center"
+					align-self="center"
+					margin="0 0px 10px 0px"
+				>
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+					>
+						{"\n"}Projects Completed
+					</Strong>
+				</Text>
+			</Box>
+			<Box
+				quarkly-title="Overlay Item One"
+				width="25%"
+				height="150px"
+				display="grid"
+				align-self="center"
+			>
+				<Icon
+					category="bs"
+					icon={BsPlus}
+					color="#a6f306"
+					font="700 36px --fontFamily-sansHeavy"
+					align-self="end"
+					justify-self="end"
+					margin="0px 40px 0px 0px"
+				/>
+				<Text
+					quarkly-title="Item Heading"
+					display="block"
+					font="700 40px --fontFamily-sans"
+					color="#ffffff"
+					align-self="center"
+					justify-self="center"
+					margin="0 0px 0 0px"
+				>
+					190
+				</Text>
+				<Text
+					quarkly-title="Item Heading"
+					color="#ffffff"
+					font="16px --fontFamily-sans"
+					display="block"
+					justify-self="center"
+					align-self="center"
+					margin="0 0px 10px 0px"
+				>
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+					>
+						{"\n"}Happy Clients
+					</Strong>
+				</Text>
+			</Box>
+			<Box
+				quarkly-title="Overlay Item One"
+				width="25%"
+				height="150px"
+				display="grid"
+				align-self="center"
+			>
+				<Icon
+					category="bs"
+					icon={BsPlus}
+					color="#a6f306"
+					font="700 36px --fontFamily-sansHeavy"
+					align-self="end"
+					justify-self="end"
+					margin="0px 40px 0px 0px"
+				/>
+				<Text
+					quarkly-title="Item Heading"
+					display="block"
+					font="700 40px --fontFamily-sans"
+					color="#ffffff"
+					align-self="center"
+					justify-self="center"
+					margin="0 0px 0 0px"
+				>
+					100%
+				</Text>
+				<Text
+					quarkly-title="Item Heading"
+					color="#ffffff"
+					font="16px --fontFamily-sans"
+					display="block"
+					justify-self="center"
+					align-self="center"
+					margin="0 0px 10px 0px"
+				>
+					<Strong>
+						On-Time Delivery
+					</Strong>
+				</Text>
+			</Box>
+		</Box>
 	</Theme>;
 });
