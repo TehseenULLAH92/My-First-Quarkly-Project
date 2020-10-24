@@ -41,6 +41,8 @@ export default (() => {
 								font="700 28px/30px --fontFamily-sans"
 								letter-spacing="2px"
 								color="#ffffff"
+								padding="5px 0px 5px 0px"
+								margin="0px 0px"
 							>
 								Integrio
 							</Link>
@@ -545,6 +547,78 @@ export default (() => {
 					</Text>
 				</Box>
 			</Box>
+		</Section>
+		<Section quarkly-title="Who We Are Section" background="--color-dark">
+			<Stack>
+				{"    "}
+				<StackItem width="50%" display="flex">
+					{"        "}
+					<Box margin="0px" padding="50px 120px 50px 50px" quarkly-title="Left Box">
+						<Text
+							font="--lead"
+							margin="0px 0px 0px 0px"
+							display="block"
+							quarkly-title="Sub Heading"
+							color="#122bfd"
+						>
+							<Strong>
+								who we are{" \n\n"}
+							</Strong>
+						</Text>
+						<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block" quarkly-title="Sub Heading">
+							<Strong color="#ffffff" font="normal 900 28px/1.2 --fontFamily-sans">
+								Custom IT Solutions
+								<br />
+								for You Business{"\n\n"}
+							</Strong>
+						</Text>
+						<Text
+							font="normal 300 16px/1.5 --fontFamily-sans"
+							margin="5px 0px 0px 0px"
+							display="block"
+							quarkly-title="Sub Heading"
+							color="#ffffff"
+							padding="0px 0 0px 0px"
+						>
+							<Strong>
+								{"\n"}We are a boutique digital transformation consultancy and development company.{"\n\n"}
+							</Strong>
+							{"\n        "}
+						</Text>
+						<Text
+							font="normal 300 16px/1.5 --fontFamily-sans"
+							margin="0px 0px 0px"
+							display="block"
+							quarkly-title="Sub Heading"
+							color="#ffffff"
+							padding="0px 0 0px 0px"
+						>
+							<Strong
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								font="normal 300 14px/0 --fontFamily-sans"
+								padding="0 0px 0px 0px"
+								margin="20px 0px 0px 0px"
+							>
+								{"\n\n"}Since 2007 we have been a visionary and a reliable software engineering partner for world-class brands. We are a boutique digital transformation consultancy and software development company that provides cutting edge engineering solutions.{"\n\n\n\n"}
+							</Strong>
+							{"\n        "}
+						</Text>
+					</Box>
+					{"    "}
+				</StackItem>
+				{"    "}
+				<StackItem width="50%" display="flex">
+					<Box quarkly-title="Right Box">
+						<Image width="100%" height="400px" src="https://uploads.quarkly.io/5f8c1c483d84d4001ec3b164/images/home-3_03.png?v=2020-10-24T11:43:01.974Z" />
+					</Box>
+					{"        "}{"    "}
+				</StackItem>
+			</Stack>
 		</Section>
 	</Theme>;
 });
