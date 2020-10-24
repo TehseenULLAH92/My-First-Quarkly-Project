@@ -13,7 +13,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section quarkly-title="Top Banner Section" background="url(https://images.unsplash.com/photo-1600239267151-50bbd103b5f0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center/cover no-repeat fixed,#000000" height="600px" display="flex">
+		<Section quarkly-title="Top Banner Section" background="#000000 url(https://uploads.quarkly.io/5f8c05d441c25f001ec3f0f9/images/home-3-rev-04.png?v=2020-10-21T20:25:50.483Z) 50%/contain no-repeat" height="650px" display="flex">
 			<Override slot="SectionContent" align-self="auto" display="flex" transition="all --transitionDuration-normal --transitionTimingFunction-easeInOut 5s" />
 			<Box
 				display="flex"
@@ -31,6 +31,7 @@ export default (() => {
 						text-align="left"
 						font="--lead"
 						quarkly-title="Logo Text"
+						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f8c05d441c25f001ec3f0f9/images/logo_03.png?v=2020-10-23T19:20:27.248Z) 0% 0% /auto repeat scroll padding-box"
 					>
 						<Strong>
 							<Link
