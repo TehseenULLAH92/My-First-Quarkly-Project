@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Text, Box, Image, Button, Icon } from "@quarkly/widgets";
+import { Theme, Link, Strong, Text, Box, Image, Button, Em, Span, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Menu, Section } from "@quarkly/components";
+import { Override, Menu, StackItem, Stack, Section } from "@quarkly/components";
 import { BsPlus } from "react-icons/bs";
 export default (() => {
 	return <Theme theme={theme}>
@@ -13,7 +13,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section quarkly-title="Top Banner" background="url(https://images.unsplash.com/photo-1600239267151-50bbd103b5f0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center/cover no-repeat fixed,#000000" height="600px" display="flex">
+		<Section quarkly-title="Top Banner Section" background="url(https://images.unsplash.com/photo-1600239267151-50bbd103b5f0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center/cover no-repeat fixed,#000000" height="600px" display="flex">
 			<Override slot="SectionContent" align-self="auto" display="flex" transition="all --transitionDuration-normal --transitionTimingFunction-easeInOut 5s" />
 			<Box
 				display="flex"
@@ -99,122 +99,350 @@ export default (() => {
 					/>
 				</Box>
 			</Box>
-			<Box
-				display="block"
-				quarkly-title="Banner Text Section"
-				margin="200px 0px 0px 0px"
-				align-items="center"
-				padding="0 0 0 0"
-				flex-direction="row"
-				justify-content="start"
-				hover-border-radius="3px"
-			>
-				<Text
-					quarkly-title="Heading One"
-					color="#ffffff"
-					font="normal 18px/1.5 --fontFamily-sans"
-					display="inline"
-					margin="0 0px 0 0px"
-				>
-					<Strong
-						overflow-wrap="normal"
-						word-break="normal"
-						white-space="normal"
-						text-indent="0"
-						text-overflow="clip"
-						hyphens="manual"
-						display="inline"
-					>
-						We are giving you the best!
-					</Strong>
-					{"\n\n"}
-				</Text>
-				<Text
-					quarkly-title="IT Products"
-					display="block"
-					as="h1"
-					color="#ffffff"
-					font="700 72px sans-serif"
-					letter-spacing={0}
-					margin="0 0px 0 0px"
-				>
-					<Strong text-indent="0" margin="0px 0px 0px 0px" font="700 72px/0 sans-serif">
-						IT Products{"\n\n"}
-					</Strong>
-				</Text>
-				<Text color="#ffffff" font="18px --fontFamily-sans" margin="0 0px 0 0px" as="h5">
-					<Strong
-						overflow-wrap="normal"
-						word-break="normal"
-						white-space="normal"
-						text-indent="0"
-						text-overflow="clip"
-						hyphens="manual"
-					>
-						in the Shortest Time.
-					</Strong>
-					{"\n\n"}
-				</Text>
-				<Box quarkly-title="Button Section" margin="15px 0px 0px 0px" padding="0px 0px 0px 0px">
-					<Button
-						font="normal 500 16px/1.5 --fontFamily-sans"
-						margin="10px 0px 0px 0px"
-						hover-background="#004f89"
-						border-width="1px"
-						border-style="none"
-						border-color="#e1dfdf"
-						border-radius="3px"
+			<Stack quarkly-title="Banner Two Col" align-self="auto" display="flex">
+				{"    "}
+				<StackItem width="50%" display="flex" quarkly-title="Item">
+					{"        "}
+					<Box
+						display="block"
+						quarkly-title="Banner Text Section"
+						margin="200px 0px 0px 0px"
+						align-items="center"
+						padding="0 0 0 0"
+						flex-direction="row"
+						justify-content="start"
 						hover-border-radius="3px"
 					>
-						Learn More
-					</Button>
-					<Button
-						font="normal 500 16px/1.5 --fontFamily-sans"
-						margin="10px 0px 0px 15px"
-						hover-background="#004f89"
-						padding="8px 20px 8px 20px"
-						border-width="1px"
-						border-radius="3px"
-						background="rgba(0, 119, 204, 0)"
-						border-color="#a2a2a2"
-						border-style="solid"
-					>
-						Go to Next
-					</Button>
-				</Box>
-			</Box>
+						<Text
+							quarkly-title="Heading One"
+							color="#ffffff"
+							font="normal 18px/1.5 --fontFamily-sans"
+							display="inline"
+							margin="0 0px 0 0px"
+						>
+							<Strong
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								display="inline"
+							>
+								We are giving you the best!
+							</Strong>
+							{"\n\n"}
+						</Text>
+						<Text
+							quarkly-title="IT Products"
+							display="block"
+							as="h1"
+							color="#ffffff"
+							font="700 72px sans-serif"
+							letter-spacing={0}
+							margin="0 0px 0 0px"
+						>
+							<Strong text-indent="0" margin="0px 0px 0px 0px" font="700 72px/0 sans-serif">
+								IT Products{"\n\n"}
+							</Strong>
+						</Text>
+						<Text color="#ffffff" font="18px --fontFamily-sans" margin="0 0px 0 0px" as="h5">
+							<Strong
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+							>
+								in the Shortest Time.
+							</Strong>
+							{"\n\n"}
+						</Text>
+						<Box quarkly-title="Button Section" margin="15px 0px 0px 0px" padding="0px 0px 0px 0px">
+							<Button
+								font="normal 500 16px/1.5 --fontFamily-sans"
+								margin="10px 0px 0px 0px"
+								hover-background="#004f89"
+								border-width="1px"
+								border-style="none"
+								border-color="#e1dfdf"
+								border-radius="3px"
+								hover-border-radius="3px"
+							>
+								Learn More
+							</Button>
+							<Button
+								font="normal 500 16px/1.5 --fontFamily-sans"
+								margin="10px 0px 0px 15px"
+								hover-background="#004f89"
+								padding="8px 20px 8px 20px"
+								border-width="1px"
+								border-radius="3px"
+								background="rgba(0, 119, 204, 0)"
+								border-color="#a2a2a2"
+								border-style="solid"
+							>
+								Go to Next
+							</Button>
+						</Box>
+					</Box>
+					{"    "}
+				</StackItem>
+				{"    "}
+				<StackItem width="50%" display="flex" quarkly-title="Item">
+					{"        "}
+					<Box quarkly-title="Tag Line" align-self="flex-end" margin="450px 0px 0px 250px">
+						<Text font="--lead" margin="0px 0px 0px 0px" display="inline" color="#ffffff">
+							- There is only one boss.
+							<br />
+							the{" "}
+							<Em>
+								customer
+							</Em>
+							{"\n\n"}
+						</Text>
+					</Box>
+					{"    "}
+				</StackItem>
+			</Stack>
 		</Section>
-		<Section quarkly-title="Services" background="#1C1C1C" color="#ffffff">
+		<Section
+			quarkly-title="Services Section"
+			background="#1C1C1C"
+			color="#ffffff"
+			padding="24px 0 120px 0"
+			border-color="rgba(255, 255, 255, 0)"
+		>
+			<Stack quarkly-title="Main Wrapper" margin="-16px -16px">
+				{"    "}
+				<StackItem width="33.33%" display="flex" quarkly-title="Wrapper Item">
+					{"        "}
+					<Box
+						quarkly-title="Item"
+						display="block"
+						grid-column="1"
+						padding="10px"
+						text-align="justify"
+						margin="0 0px"
+					>
+						<Text quarkly-title="Title" font="normal 500 36px/1.2 --fontFamily-sans" padding="20px" margin="0 0px">
+							Products{" "}
+							<br />
+							engineering{"\n\n\n\n"}
+						</Text>
+						<Text
+							quarkly-title="Paragraph"
+							font="normal 400 16px/1.4 --fontFamily-sans"
+							padding="20px"
+							margin="0 0px"
+							text-align="left"
+						>
+							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+						</Text>
+						<Text
+							quarkly-title="Sub Heading"
+							font="normal 400 18px/1.4 --fontFamily-sans"
+							padding="20px"
+							margin="0 0px"
+							text-align="left"
+						>
+							<Strong>
+								PRODUCT DEVELOPMENT
+								<br />
+								PRODUCT CONSULTATION
+								<br />
+								ARCHITECTURE DESIGN{"\n\n\n\n"}
+							</Strong>
+						</Text>
+					</Box>
+					{"    "}
+				</StackItem>
+				<StackItem width="33.33%" display="flex" quarkly-title="Wrapper Item">
+					{"        "}
+					<Box
+						quarkly-title="Item"
+						display="block"
+						grid-column="1"
+						padding="10px"
+						text-align="justify"
+						margin="0 0px"
+					>
+						<Text quarkly-title="Title" font="normal 500 36px/1.2 --fontFamily-sans" padding="20px" margin="0 0px">
+							UI/UX
+							<br />
+							STRATEGY{"\n\n\n\n\n\n"}
+						</Text>
+						<Text
+							quarkly-title="Paragraph"
+							font="normal 400 16px/1.4 --fontFamily-sans"
+							padding="20px"
+							margin="0 0px"
+							text-align="left"
+						>
+							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+						</Text>
+						<Text
+							quarkly-title="Sub Heading"
+							font="normal 400 18px/1.4 --fontFamily-sans"
+							padding="20px"
+							margin="0 0px"
+							text-align="left"
+						>
+							<Span
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+							>
+								<Strong>
+									{"\n"}BRAND DEVELOPMENT
+									<br />
+									TECHNOLOGY PROTOTYPING
+									<br />
+									BRAND INTEGRATION{"\n\n"}
+								</Strong>
+								{"\n\n\n\n"}
+							</Span>
+						</Text>
+					</Box>
+					{"    "}
+				</StackItem>
+				<StackItem width="33.33%" display="flex" quarkly-title="Wrapper Item">
+					{"        "}
+					<Box
+						quarkly-title="Item"
+						display="block"
+						grid-column="1"
+						padding="10px"
+						text-align="justify"
+						margin="0 0px"
+					>
+						<Text quarkly-title="Title" font="normal 500 36px/1.2 --fontFamily-sans" padding="20px" margin="0 0px">
+							BIG DATA
+							<br />
+							& ANALYTICE{"\n\n\n\n\n\n"}
+						</Text>
+						<Text
+							quarkly-title="Paragraph"
+							font="normal 400 16px/1.4 --fontFamily-sans"
+							padding="20px"
+							margin="0 0px"
+							text-align="left"
+						>
+							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+						</Text>
+						<Text
+							quarkly-title="Sub Heading"
+							font="normal 400 18px/1.4 --fontFamily-sans"
+							padding="20px"
+							margin="0 0px"
+							text-align="left"
+						>
+							<Strong>
+								{"\n"}ETL/DATA MANAGEMENT
+								<br />
+								ANALYTICAL DEVELOPMENT
+								<br />
+								STREAM PROCESSING{"\n\n"}
+							</Strong>
+						</Text>
+					</Box>
+					{"    "}
+				</StackItem>
+				{"    "}
+			</Stack>
+		</Section>
+		<Section quarkly-title="Overlay Section" background="#1C1C1C" border-width={0}>
 			<Box
-				quarkly-title="Main Wrapper"
-				display="grid"
+				quarkly-title="Overlay Block"
+				background="#075af7 linear-gradient(-50deg,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%) 0% 0%/cover no-repeat"
 				position="relative"
-				top={0}
-				height="430px"
+				width="880px"
+				height="200px"
+				margin="-115px auto 0px"
+				display="flex"
 			>
 				<Box
-					quarkly-title="Item"
-					display="block"
-					grid-column="1"
-					padding="60px"
-					text-align="justify"
-					margin="0 0px"
+					quarkly-title="Overlay Item One"
+					width="25%"
+					height="150px"
+					display="grid"
+					align-self="center"
 				>
-					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px" margin="0 0px">
-						<Strong font="normal 700 18px --fontFamily-sans">
-							Product{" "}
-							<br />
-							Engineering
-							<br />
+					<Icon
+						category="bs"
+						icon={BsPlus}
+						color="#a6f306"
+						font="700 36px --fontFamily-sansHeavy"
+						align-self="end"
+						justify-self="end"
+						margin="0px 40px 0px 0px"
+					/>
+					<Text
+						quarkly-title="Item Heading"
+						display="block"
+						font="700 40px --fontFamily-sans"
+						color="#ffffff"
+						align-self="center"
+						justify-self="center"
+						margin="0 0px 0 0px"
+					>
+						350{"\n\n"}
+					</Text>
+					<Text
+						quarkly-title="Item Heading"
+						color="#ffffff"
+						font="16px --fontFamily-sans"
+						display="block"
+						justify-self="center"
+						align-self="center"
+						margin="0 0px 10px 0px"
+					>
+						<Strong>
+							{"\n"}Demonstration{"\n\n"}
 						</Strong>
-						<br />
-						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
 					</Text>
 				</Box>
-				<Box quarkly-title="Item" grid-column="2" text-align="justify" padding="40px">
-					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px" margin="0 0px">
+				<Box
+					quarkly-title="Overlay Item One"
+					width="25%"
+					height="150px"
+					display="grid"
+					align-self="center"
+				>
+					<Icon
+						category="bs"
+						icon={BsPlus}
+						color="#a6f306"
+						font="700 36px --fontFamily-sansHeavy"
+						align-self="end"
+						justify-self="end"
+						margin="0px 40px 0px 0px"
+					/>
+					<Text
+						quarkly-title="Item Heading"
+						display="block"
+						font="700 40px --fontFamily-sans"
+						color="#ffffff"
+						align-self="center"
+						justify-self="center"
+						margin="0 0px 0 0px"
+					>
+						285
+					</Text>
+					<Text
+						quarkly-title="Item Heading"
+						color="#ffffff"
+						font="16px --fontFamily-sans"
+						display="block"
+						justify-self="center"
+						align-self="center"
+						margin="0 0px 10px 0px"
+					>
 						<Strong
-							font="normal 700 18px --fontFamily-sans"
 							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
@@ -222,217 +450,100 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							UI/UX
-							<br />
-							Strategy
-							<br />
+							{"\n"}Projects Completed
 						</Strong>
-						<br />
-						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
 					</Text>
 				</Box>
-				<Box quarkly-title="Item" grid-column="3" text-align="justify" padding="40px">
-					<Text quarkly-title="Paragraph" font="16px/1.4 sans-serif" padding="20px" margin="0 0px">
-						<Strong font="normal 700 18px --fontFamily-sans" text-align="justify">
-							Big Data
-							<br />
-							& Analytics
-							<br />
-							{" "}
-							<br />
+				<Box
+					quarkly-title="Overlay Item One"
+					width="25%"
+					height="150px"
+					display="grid"
+					align-self="center"
+				>
+					<Icon
+						category="bs"
+						icon={BsPlus}
+						color="#a6f306"
+						font="700 36px --fontFamily-sansHeavy"
+						align-self="end"
+						justify-self="end"
+						margin="0px 40px 0px 0px"
+					/>
+					<Text
+						quarkly-title="Item Heading"
+						display="block"
+						font="700 40px --fontFamily-sans"
+						color="#ffffff"
+						align-self="center"
+						justify-self="center"
+						margin="0 0px 0 0px"
+					>
+						190
+					</Text>
+					<Text
+						quarkly-title="Item Heading"
+						color="#ffffff"
+						font="16px --fontFamily-sans"
+						display="block"
+						justify-self="center"
+						align-self="center"
+						margin="0 0px 10px 0px"
+					>
+						<Strong
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							{"\n"}Happy Clients
 						</Strong>
-						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+					</Text>
+				</Box>
+				<Box
+					quarkly-title="Overlay Item One"
+					width="25%"
+					height="150px"
+					display="grid"
+					align-self="center"
+				>
+					<Icon
+						category="bs"
+						icon={BsPlus}
+						color="#a6f306"
+						font="700 36px --fontFamily-sansHeavy"
+						align-self="end"
+						justify-self="end"
+						margin="0px 40px 0px 0px"
+					/>
+					<Text
+						quarkly-title="Item Heading"
+						display="block"
+						font="700 40px --fontFamily-sans"
+						color="#ffffff"
+						align-self="center"
+						justify-self="center"
+						margin="0 0px 0 0px"
+					>
+						100%
+					</Text>
+					<Text
+						quarkly-title="Item Heading"
+						color="#ffffff"
+						font="16px --fontFamily-sans"
+						display="block"
+						justify-self="center"
+						align-self="center"
+						margin="0 0px 10px 0px"
+					>
+						<Strong>
+							On-Time Delivery
+						</Strong>
 					</Text>
 				</Box>
 			</Box>
 		</Section>
-		<Box
-			quarkly-title="Overlay Block"
-			background="#075af7 linear-gradient(-50deg,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%) 0% 0%/cover no-repeat"
-			position="relative"
-			width="880px"
-			height="200px"
-			margin="-115px auto 0px"
-			display="flex"
-		>
-			<Box
-				quarkly-title="Overlay Item One"
-				width="25%"
-				height="150px"
-				display="grid"
-				align-self="center"
-			>
-				<Icon
-					category="bs"
-					icon={BsPlus}
-					color="#a6f306"
-					font="700 36px --fontFamily-sansHeavy"
-					align-self="end"
-					justify-self="end"
-					margin="0px 40px 0px 0px"
-				/>
-				<Text
-					quarkly-title="Item Heading"
-					display="block"
-					font="700 40px --fontFamily-sans"
-					color="#ffffff"
-					align-self="center"
-					justify-self="center"
-					margin="0 0px 0 0px"
-				>
-					350{"\n\n"}
-				</Text>
-				<Text
-					quarkly-title="Item Heading"
-					color="#ffffff"
-					font="16px --fontFamily-sans"
-					display="block"
-					justify-self="center"
-					align-self="center"
-					margin="0 0px 10px 0px"
-				>
-					<Strong>
-						{"\n"}Demonstration{"\n\n"}
-					</Strong>
-				</Text>
-			</Box>
-			<Box
-				quarkly-title="Overlay Item One"
-				width="25%"
-				height="150px"
-				display="grid"
-				align-self="center"
-			>
-				<Icon
-					category="bs"
-					icon={BsPlus}
-					color="#a6f306"
-					font="700 36px --fontFamily-sansHeavy"
-					align-self="end"
-					justify-self="end"
-					margin="0px 40px 0px 0px"
-				/>
-				<Text
-					quarkly-title="Item Heading"
-					display="block"
-					font="700 40px --fontFamily-sans"
-					color="#ffffff"
-					align-self="center"
-					justify-self="center"
-					margin="0 0px 0 0px"
-				>
-					285
-				</Text>
-				<Text
-					quarkly-title="Item Heading"
-					color="#ffffff"
-					font="16px --fontFamily-sans"
-					display="block"
-					justify-self="center"
-					align-self="center"
-					margin="0 0px 10px 0px"
-				>
-					<Strong
-						overflow-wrap="normal"
-						word-break="normal"
-						white-space="normal"
-						text-indent="0"
-						text-overflow="clip"
-						hyphens="manual"
-					>
-						{"\n"}Projects Completed
-					</Strong>
-				</Text>
-			</Box>
-			<Box
-				quarkly-title="Overlay Item One"
-				width="25%"
-				height="150px"
-				display="grid"
-				align-self="center"
-			>
-				<Icon
-					category="bs"
-					icon={BsPlus}
-					color="#a6f306"
-					font="700 36px --fontFamily-sansHeavy"
-					align-self="end"
-					justify-self="end"
-					margin="0px 40px 0px 0px"
-				/>
-				<Text
-					quarkly-title="Item Heading"
-					display="block"
-					font="700 40px --fontFamily-sans"
-					color="#ffffff"
-					align-self="center"
-					justify-self="center"
-					margin="0 0px 0 0px"
-				>
-					190
-				</Text>
-				<Text
-					quarkly-title="Item Heading"
-					color="#ffffff"
-					font="16px --fontFamily-sans"
-					display="block"
-					justify-self="center"
-					align-self="center"
-					margin="0 0px 10px 0px"
-				>
-					<Strong
-						overflow-wrap="normal"
-						word-break="normal"
-						white-space="normal"
-						text-indent="0"
-						text-overflow="clip"
-						hyphens="manual"
-					>
-						{"\n"}Happy Clients
-					</Strong>
-				</Text>
-			</Box>
-			<Box
-				quarkly-title="Overlay Item One"
-				width="25%"
-				height="150px"
-				display="grid"
-				align-self="center"
-			>
-				<Icon
-					category="bs"
-					icon={BsPlus}
-					color="#a6f306"
-					font="700 36px --fontFamily-sansHeavy"
-					align-self="end"
-					justify-self="end"
-					margin="0px 40px 0px 0px"
-				/>
-				<Text
-					quarkly-title="Item Heading"
-					display="block"
-					font="700 40px --fontFamily-sans"
-					color="#ffffff"
-					align-self="center"
-					justify-self="center"
-					margin="0 0px 0 0px"
-				>
-					100%
-				</Text>
-				<Text
-					quarkly-title="Item Heading"
-					color="#ffffff"
-					font="16px --fontFamily-sans"
-					display="block"
-					justify-self="center"
-					align-self="center"
-					margin="0 0px 10px 0px"
-				>
-					<Strong>
-						On-Time Delivery
-					</Strong>
-				</Text>
-			</Box>
-		</Box>
 	</Theme>;
 });
