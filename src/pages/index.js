@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Strong, Text, Box, Image, Button, Em, Span, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Menu, StackItem, Stack, Section } from "@quarkly/components";
+import { Override, Menu, StackItem, Stack, Section, SocialMedia } from "@quarkly/components";
 import { BsPlus } from "react-icons/bs";
 export default (() => {
 	return <Theme theme={theme}>
@@ -786,7 +786,7 @@ export default (() => {
 					<Button align-self="center" width="150px">
 						View All
 					</Button>
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				{"    "}
 			</Stack>
@@ -826,7 +826,7 @@ export default (() => {
 					<Button align-self="center" width="150px">
 						View All
 					</Button>
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				{"    "}
 			</Stack>
@@ -866,10 +866,170 @@ export default (() => {
 					<Button align-self="center" width="150px">
 						View All
 					</Button>
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				{"    "}
 			</Stack>
+		</Section>
+		<Section
+			color="--light"
+			padding="150px 0"
+			sm-padding="40px 0"
+			position="static"
+			background="--color-dark url(https://uploads.quarkly.io/5f8c05d441c25f001ec3f0f9/images/Home_3-footer-1.jpg?v=2020-10-21T19:29:40.904Z)"
+			height="600px"
+			quarkly-title="Focus And Business Section"
+		>
+			<Override slot="SectionContent" text-align="center" />
+			<Box quarkly-title="Focus And Business Box" height="900px">
+				<Text text-align="center" font="30px/2 --fontFamily-sans">
+					We Take Care of Your Technology{" "}
+				</Text>
+				<Text text-align="center" font="--headline1" text-transform="uppercase" margin="0 0px 0 0px">
+					focus on your
+					<br />
+					{" "}business
+				</Text>
+				<Button
+					width="140px"
+					text-align="center"
+					position="relative"
+					font="normal 300 16px/1.5 --fontFamily-sans"
+					padding="20 24px"
+					margin="50px 0px 0px 0px"
+					background="--color-primary linear-gradient(90deg,#0c1bae 0%,#3486fe 100%)"
+				>
+					contact us
+				</Button>
+			</Box>
+			<Box
+				align-self="center"
+				display="flex"
+				width="100%"
+				height="550px"
+				background="rgba(15, 15, 15, 0.3)"
+				margin="200px 0px 20px 0px"
+				quarkly-title="Top Footer Box"
+			>
+				<Box display="block" width="200px" margin="0px 20px 0px 200px" quarkly-title="Logo and About Item">
+					<Text
+						height="25px"
+						width="100%"
+						color="#f5f0f0"
+						font="600 22px sans-serif"
+						text-transform="uppercase"
+						text-align="left"
+					>
+						INTEGRIO
+					</Text>
+					<Text width="100%" height="100px" color="#ffffff" text-align="justify">
+						He this is adf and this is my test whole this is my test whole this my si te so no response row from the support still.{" "}
+					</Text>
+					<SocialMedia
+						facebook="https://www.facebook.com/quarklyapp/"
+						twitter="https://twitter.com/quarklyapp"
+						youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw"
+						vkontakte="https://vk.com/quarklyapp"
+						telegram="https://t.me/joinchat/DqSYDhS0R9nMRvOtFbIxrQ"
+						padding="0 0px 0 0px"
+						margin="0px 0px 0 0px"
+					>
+						<Override
+							slot="link"
+							border-radius="50%"
+							color="--grey"
+							hover-color="--light"
+							background="transparent"
+							hover-background="transparent"
+							margin="0 8px"
+						/>
+					</SocialMedia>
+				</Box>
+				<Box display="block" width="200px" margin="0px 20px 0px 0px" quarkly-title="Contact Item">
+					<Text
+						height="25px"
+						width="100%"
+						color="#f5f0f0"
+						font="600 22px sans-serif"
+						text-transform="uppercase"
+						text-align="left"
+					>
+						CONTACT US
+					</Text>
+					<Text width="100%" height="100px" color="#ffffff" text-align="justify">
+						He this is adf and this is my test whole this is my test whole this my si te so no response row from the support still.{" "}
+					</Text>
+				</Box>
+				<Box display="block" width="200px" margin="0px 20px 0px 0px" quarkly-title="Services Item">
+					<Text
+						height="25px"
+						width="100%"
+						color="#f5f0f0"
+						font="600 22px sans-serif"
+						text-transform="uppercase"
+						text-align="left"
+					>
+						SERVICES
+					</Text>
+					<Text width="100%" height="100px" color="#ffffff" text-align="justify">
+						He this is adf and this is my test whole this is my test whole this my si te so no response row from the support still.{" "}
+					</Text>
+				</Box>
+				<Box display="block" width="200px" quarkly-title="Recent News Item">
+					<Text
+						height="25px"
+						width="100%"
+						color="#f5f0f0"
+						font="600 22px sans-serif"
+						text-transform="uppercase"
+						text-align="left"
+					>
+						RECENT NEWS
+					</Text>
+					<Box display="flex" quarkly-title="News Item" margin="5px 0px 5px 0px" padding="0 0px 0 0px">
+						<Image width="64px" height="64px" src="https://images.unsplash.com/photo-1603482011932-089d2b06ab18?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000" />
+						<Text height="43px" width="100%" margin="12px 0px 16px 15px" color="#f3e9e9">
+							Some text are good here, so nice of you
+						</Text>
+					</Box>
+					<Box display="flex" quarkly-title="News Item">
+						<Image width="64px" height="64px" src="https://images.unsplash.com/photo-1603482011932-089d2b06ab18?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000" />
+						<Text height="43px" width="100%" margin="12px 0px 16px 15px" color="#f3e9e9">
+							Some text are good here, so nice of you
+						</Text>
+					</Box>
+					<Box display="flex" quarkly-title="News Item">
+						<Image width="64px" height="64px" src="https://images.unsplash.com/photo-1603482011932-089d2b06ab18?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000" />
+						<Text height="43px" width="100%" margin="12px 0px 16px 15px" color="#f3e9e9">
+							Some text are good here, so nice of you
+						</Text>
+					</Box>
+				</Box>
+			</Box>
+		</Section>
+		<Section background="--color-darkL2" quarkly-title="Footer Section">
+			<Box width="880px" height="40px" align-self="center" display="flex">
+				<Box width="50%">
+					<Text color="#919191" font="14px sans-serif">
+						Copyright @2020 All right Reserved.{" "}
+					</Text>
+				</Box>
+				<Box width="50%">
+					<Text text-align="right" color="#787777" font="14px sans-serif">
+						Privacy Policy | Terms and Condition | Developed by:{" "}
+						<Strong
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							Tehseen Khan
+						</Strong>
+					</Text>
+				</Box>
+			</Box>
 		</Section>
 	</Theme>;
 });
