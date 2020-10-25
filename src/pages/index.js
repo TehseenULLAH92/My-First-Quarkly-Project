@@ -41,6 +41,8 @@ export default (() => {
 								font="700 28px/30px --fontFamily-sans"
 								letter-spacing="2px"
 								color="#ffffff"
+								padding="5px 0px 5px 0px"
+								margin="0px 0px"
 							>
 								Integrio
 							</Link>
@@ -132,7 +134,6 @@ export default (() => {
 							>
 								We are giving you the best!
 							</Strong>
-							{"\n\n"}
 						</Text>
 						<Text
 							quarkly-title="IT Products"
@@ -144,7 +145,7 @@ export default (() => {
 							margin="0 0px 0 0px"
 						>
 							<Strong text-indent="0" margin="0px 0px 0px 0px" font="700 72px/0 sans-serif">
-								IT Products{"\n\n"}
+								IT Products
 							</Strong>
 						</Text>
 						<Text color="#ffffff" font="18px --fontFamily-sans" margin="0 0px 0 0px" as="h5">
@@ -158,7 +159,6 @@ export default (() => {
 							>
 								in the Shortest Time.
 							</Strong>
-							{"\n\n"}
 						</Text>
 						<Box quarkly-title="Button Section" margin="15px 0px 0px 0px" padding="0px 0px 0px 0px">
 							<Button
@@ -201,7 +201,6 @@ export default (() => {
 							<Em>
 								customer
 							</Em>
-							{"\n\n"}
 						</Text>
 					</Box>
 					{"    "}
@@ -230,7 +229,7 @@ export default (() => {
 						<Text quarkly-title="Title" font="normal 500 36px/1.2 --fontFamily-sans" padding="20px" margin="0 0px">
 							Products{" "}
 							<br />
-							engineering{"\n\n\n\n"}
+							engineering
 						</Text>
 						<Text
 							quarkly-title="Paragraph"
@@ -239,7 +238,7 @@ export default (() => {
 							margin="0 0px"
 							text-align="left"
 						>
-							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.
 						</Text>
 						<Text
 							quarkly-title="Sub Heading"
@@ -253,7 +252,7 @@ export default (() => {
 								<br />
 								PRODUCT CONSULTATION
 								<br />
-								ARCHITECTURE DESIGN{"\n\n\n\n"}
+								ARCHITECTURE DESIGN
 							</Strong>
 						</Text>
 					</Box>
@@ -272,7 +271,7 @@ export default (() => {
 						<Text quarkly-title="Title" font="normal 500 36px/1.2 --fontFamily-sans" padding="20px" margin="0 0px">
 							UI/UX
 							<br />
-							STRATEGY{"\n\n\n\n\n\n"}
+							STRATEGY
 						</Text>
 						<Text
 							quarkly-title="Paragraph"
@@ -281,7 +280,7 @@ export default (() => {
 							margin="0 0px"
 							text-align="left"
 						>
-							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.
 						</Text>
 						<Text
 							quarkly-title="Sub Heading"
@@ -299,13 +298,12 @@ export default (() => {
 								hyphens="manual"
 							>
 								<Strong>
-									{"\n"}BRAND DEVELOPMENT
+									BRAND DEVELOPMENT
 									<br />
 									TECHNOLOGY PROTOTYPING
 									<br />
-									BRAND INTEGRATION{"\n\n"}
+									BRAND INTEGRATION
 								</Strong>
-								{"\n\n\n\n"}
 							</Span>
 						</Text>
 					</Box>
@@ -324,7 +322,7 @@ export default (() => {
 						<Text quarkly-title="Title" font="normal 500 36px/1.2 --fontFamily-sans" padding="20px" margin="0 0px">
 							BIG DATA
 							<br />
-							& ANALYTICE{"\n\n\n\n\n\n"}
+							& ANALYTICE
 						</Text>
 						<Text
 							quarkly-title="Paragraph"
@@ -333,7 +331,7 @@ export default (() => {
 							margin="0 0px"
 							text-align="left"
 						>
-							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.{"\n\n"}
+							This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.
 						</Text>
 						<Text
 							quarkly-title="Sub Heading"
@@ -343,11 +341,11 @@ export default (() => {
 							text-align="left"
 						>
 							<Strong>
-								{"\n"}ETL/DATA MANAGEMENT
+								ETL/DATA MANAGEMENT
 								<br />
 								ANALYTICAL DEVELOPMENT
 								<br />
-								STREAM PROCESSING{"\n\n"}
+								STREAM PROCESSING
 							</Strong>
 						</Text>
 					</Box>
@@ -391,7 +389,7 @@ export default (() => {
 						justify-self="center"
 						margin="0 0px 0 0px"
 					>
-						350{"\n\n"}
+						350
 					</Text>
 					<Text
 						quarkly-title="Item Heading"
@@ -403,7 +401,7 @@ export default (() => {
 						margin="0 0px 10px 0px"
 					>
 						<Strong>
-							{"\n"}Demonstration{"\n\n"}
+							Demonstration
 						</Strong>
 					</Text>
 				</Box>
@@ -451,7 +449,7 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							{"\n"}Projects Completed
+							Projects Completed
 						</Strong>
 					</Text>
 				</Box>
@@ -499,7 +497,7 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							{"\n"}Happy Clients
+							Happy Clients
 						</Strong>
 					</Text>
 				</Box>
@@ -545,6 +543,333 @@ export default (() => {
 					</Text>
 				</Box>
 			</Box>
+		</Section>
+		<Section
+			quarkly-title="Who We Are Section"
+			background="--color-dark"
+			position="relative"
+			top={0}
+			height="800px"
+		>
+			<Stack>
+				{"    "}
+				<StackItem width="50%" display="flex">
+					{"        "}
+					<Box margin="0px" padding="50px 120px 50px 50px" quarkly-title="Left Box">
+						<Text
+							font="--lead"
+							margin="0px 0px 0px 0px"
+							display="block"
+							quarkly-title="Sub Heading"
+							color="#122bfd"
+						>
+							<Strong>
+								who we are{" "}
+							</Strong>
+						</Text>
+						<Text font="--lead" margin="0px 0px 0px 0px" display="inline-block" quarkly-title="Sub Heading">
+							<Strong color="#ffffff" font="normal 900 28px/1.2 --fontFamily-sans" margin="10px 0px 0px">
+								Custom IT Solutions
+								<br />
+								for You Business
+							</Strong>
+						</Text>
+						<Text
+							font="normal 300 16px/1.5 --fontFamily-sans"
+							margin="10px 0px 0px 0px"
+							display="block"
+							quarkly-title="Sub Heading"
+							color="#ffffff"
+							padding="0px 0 0px 0px"
+						>
+							<Strong>
+								We are a boutique digital transformation consultancy and development company.
+							</Strong>
+							{"        "}
+						</Text>
+						<Text
+							font="normal 300 16px/1.5 --fontFamily-sans"
+							margin="20px 0px 0px"
+							display="block"
+							quarkly-title="Sub Heading"
+							color="#ffffff"
+							padding="0px 0 0px 0px"
+						>
+							<Strong
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								font="normal 300 14px/0 --fontFamily-sans"
+								padding="0 0px 0px 0px"
+								margin="60px 0px 0px 0px"
+							>
+								Since 2007 we have been a visionary and a reliable software engineering partner for world-class brands. We are a boutique digital transformation consultancy and software development company that provides cutting edge engineering solutions.
+							</Strong>
+							{"        "}
+						</Text>
+					</Box>
+					{"    "}
+				</StackItem>
+				{"    "}
+				<StackItem width="50%" display="flex">
+					<Box quarkly-title="Right Box">
+						<Image width="100%" src="https://uploads.quarkly.io/5f8c1c483d84d4001ec3b164/images/home-3_03.png?v=2020-10-24T11:43:01.974Z" height="500px" />
+					</Box>
+					{"            "}
+				</StackItem>
+			</Stack>
+			<Stack margin="-16px -16px -20px -16px" position="absolute" top="75%">
+				{"    "}
+				<StackItem
+					width="31%"
+					display="flex"
+					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f8c05d441c25f001ec3f0f9/images/home-03_services_2.jpg?v=2020-10-23T18:37:31.915Z) 0% 0% /cover repeat scroll padding-box"
+					height="400px"
+					margin="0px 20px 0px"
+				>
+					{"        "}
+					<Text font="normal 500 35px/1.2 --fontFamily-sans" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
+						Cross-Industry
+						<br />
+						Expertise
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="31%" display="flex" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f8c05d441c25f001ec3f0f9/images/home-03_services_1.jpg?v=2020-10-23T19:00:35.185Z) 0% 0% /auto repeat scroll padding-box">
+					{"        "}
+					<Text font="normal 500 35px/1.2 --fontFamily-sans" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
+						Deep Expertise &
+						<br />
+						Leadership
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="31%" display="flex" background="#3486fe linear-gradient(90deg,#0c1bae 0%,#3486fe 100%) 0% 0% /auto repeat scroll padding-box" margin="0px 0px 0px 25px">
+					{"        "}
+					<Box>
+						<Text font="normal 600 38px/1.2 --fontFamily-sans" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
+							Dedicated IT
+							<br />
+							Solution
+							<br />
+							<br />
+						</Text>
+						<Text
+							font="normal 200 22px/1.2 --fontFamily-sans"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							color="#ffffff"
+							width="350px"
+						>
+							We have the technology and industry expertise to develop solutions that can connect people and businesses across a variety of mobile devices.
+							<Link
+								href="http://integrio.wgl-demo.net/home-3/#"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+							/>
+						</Text>
+					</Box>
+					{"    "}
+				</StackItem>
+				{"    "}
+			</Stack>
+		</Section>
+		<Section quarkly-title="Clients Section" background="#1C1C1C" height="380px">
+			<Box
+				width="880px"
+				height="120px"
+				top="234px"
+				display="flex"
+				align-self="center"
+				margin="230px 0px 0px 0px"
+			>
+				<Box width="150px" height="90px">
+					<Image width="100%" height="100%" src="https://images.unsplash.com/photo-1572094382897-21abe88fb269?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000" />
+				</Box>
+				<Box width="150px" height="90px">
+					<Image width="93%" height="100%" src="https://images.unsplash.com/photo-1505489435671-80a165c60816?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000" />
+				</Box>
+				<Box width="150px" height="90px">
+					<Image width="100%" height="100%" src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000" />
+				</Box>
+				<Box width="150px" height="90px">
+					<Image width="100%" height="100%" src="https://images.unsplash.com/photo-1553835973-dec43bfddbeb?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000" />
+				</Box>
+				<Box width="150px" height="90px">
+					<Image width="100%" height="100%" src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000" />
+				</Box>
+				<Box width="150px" height="90px">
+					<Image width="100%" height="100%" src="https://images.unsplash.com/photo-1560880745-5f9e76672613?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000" display="flex" />
+				</Box>
+			</Box>
+		</Section>
+		<Section color="--dark" background="#1C1C1C" quarkly-title="Awards Section">
+			<Text
+				as="h2"
+				font="normal 500 30px/1.2 --fontFamily-sans"
+				md-font="--headline2"
+				margin="20px 0 0 0"
+				color="#3486fe"
+				text-align="center"
+				text-transform="uppercase"
+			>
+				WE MAKE CONNECTIONS
+			</Text>
+			<Text
+				as="h2"
+				font="normal 900 66px/1.2 --fontFamily-sans"
+				md-font="--headline2"
+				margin="20px 0 0 0"
+				color="#ffffff"
+				text-align="center"
+			>
+				Awards that we have{" "}
+			</Text>
+			<Text
+				as="h2"
+				font="normal 500 18px/1.2 --fontFamily-sans"
+				md-font="--headline2"
+				margin="20px 0 0 0"
+				color="#ffffff"
+				text-align="center"
+			>
+				We are a boutique digital transformation consultancy and{" "}
+				<br />
+				development company.
+			</Text>
+			<Stack margin="20px -16px -16px -16px">
+				{"    "}
+				<StackItem width="24%" display="flex" padding="16px 0 16px 0">
+					<Override
+						slot="StackItemContent"
+						display="inline-block"
+						height="50px"
+						text-align="justify"
+						align-self="center"
+					/>
+					{"        "}
+					<Text
+						as="h3"
+						font="--headline3"
+						margin="10px 0"
+						color="#ffffff"
+						text-align="center"
+						display="flex"
+						align-self="center"
+					>
+						site of the monthe:{" "}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="60%" display="flex" padding="16px 0 16px 0">
+					{"        "}
+					<Text
+						as="p"
+						font="--lead"
+						margin="10px 0"
+						color="--light"
+						text-align="justify"
+						display="inline"
+					>
+						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="15%" display="flex" align-self="center">
+					<Button align-self="center" width="150px">
+						View All
+					</Button>
+					{"        "}{"    "}
+				</StackItem>
+				{"    "}
+			</Stack>
+			<Stack margin="20px -16px -16px -16px">
+				{"    "}
+				<StackItem width="24%" display="flex" padding="16px 0 16px 0">
+					<Override slot="StackItemContent" display="inline-block" height="50px" text-align="justify" />
+					{"        "}
+					<Text
+						as="h3"
+						font="--headline3"
+						margin="10px 0"
+						color="#ffffff"
+						text-align="center"
+						display="inline"
+						align-self="center"
+					>
+						site of the monthe:{" "}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="60%" display="flex" padding="16px 0 16px 0">
+					{"        "}
+					<Text
+						as="p"
+						font="--lead"
+						margin="10px 0"
+						color="--light"
+						text-align="justify"
+						display="inline"
+					>
+						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="15%" display="flex">
+					<Button align-self="center" width="150px">
+						View All
+					</Button>
+					{"        "}{"    "}
+				</StackItem>
+				{"    "}
+			</Stack>
+			<Stack margin="20px -16px -16px -16px">
+				{"    "}
+				<StackItem width="24%" display="flex" padding="16px 0 16px 0">
+					<Override slot="StackItemContent" display="inline-block" height="50px" text-align="justify" />
+					{"        "}
+					<Text
+						as="h3"
+						font="--headline3"
+						margin="10px 0"
+						color="#ffffff"
+						text-align="center"
+						display="inline"
+						align-self="center"
+					>
+						site of the monthe:{" "}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="60%" display="flex" padding="16px 0 16px 0">
+					{"        "}
+					<Text
+						as="p"
+						font="--lead"
+						margin="10px 0"
+						color="--light"
+						text-align="justify"
+						display="inline"
+					>
+						This is Dummy text for lorem ipsum and you are watching this dummy text for lorem ipsum and a lorem ipsum is good text facilities in this text world. Highly appreciated for this nice tool, like it much and good all this good.
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="15%" display="flex">
+					<Button align-self="center" width="150px">
+						View All
+					</Button>
+					{"        "}{"    "}
+				</StackItem>
+				{"    "}
+			</Stack>
 		</Section>
 	</Theme>;
 });
